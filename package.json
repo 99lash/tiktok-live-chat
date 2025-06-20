@@ -1,0 +1,16 @@
+{
+  "name": "tiktok-live-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "99lash",
+  "license": "ISC",
+  "description": "display tiktok live chat of streamer in your terminal using Tiktok Live Connector",
+  "dependencies": {
+    "tiktok-live-connector": "^2.0.6-beta2"
+  }
+}
