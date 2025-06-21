@@ -18,7 +18,7 @@ connection.on(WebcastEvent.CHAT, data => {
   const user = data.user.nickname;
   const userComment = data.comment;
   // const template = `${TEXT.green}[${user}]: ${TEXT.reset}${userComment}`;
-  const template = `[${TEXT.greenStr(user)}${TEXT.reset}]: ${userComment}`;
+  const template = `[${TEXT.yellowStr(user)}]: ${userComment}`;
   
   // console.log(`[${data.user.uniqueId}]: ${data.comment}`);
   console.log(template);
@@ -27,6 +27,19 @@ connection.on(WebcastEvent.CHAT, data => {
 connection.on(WebcastEvent.LIKE, data => {
   const user = data.user.nickname;
   const count = data.likeCount;
-  const template = `[${TEXT.greenStr(user)}${TEXT.reset}] sents ${count} likes`;
+  const template = `[${TEXT.redStr(user)}] sents ${count} like(s)`;
+  console.log(template);
+});
+
+connection.on(WebcastEvent.MEMBER, data => {
+  const user = data.user.nickname;
+  const template = `${TEXT.grayStr(user)} joined the stream!`;
+  console.log(template)
+});
+
+connection.on(WebcastEvent.GIFT, data => {
+  const user = data.user.nickname;
+  const gift = data.giftDetails.giftName;
+  const template = `${TEXT.blueStr(user)} sent ${TEXT.redStr(gift)}`;
   console.log(template);
 });
