@@ -23,6 +23,8 @@ environment running
 
 3: Run in your terminal 
 
+    nodemon index <tiktok-username>
+
   Example: nodemon index idolismykoyly
 
-    nodemon index <tiktok-username>
+![image](https://github.com/user-attachments/assets/95c57037-1a63-420d-b9a0-ed7e39b14c54)
