@@ -16,10 +16,34 @@ export default class Color {
   }
 
   redStr(string) {
-    return this.red+ string + this.red;
+    return this.red+ string + this.reset;
   }
 
   greenStr(string) {
-    return this.green + string + this.green;
+    return this.green + string + this.reset;
+  }
+
+  yellowStr(string) {
+    return this.green + string + this.reset;
+  }
+
+  blueStr(string) {
+    return this.blue + string + this.reset;
+  }
+
+  magentaStr(string) {
+    return this.magenta + string + this.reset;
+  }
+
+  cyanStr(string) {
+    return this.cyan + string + this.reset;
+  }
+
+  grayStr(string) {
+    return this.gray + string + this.reset;
+  }
+
+  whiteStr(string) {
+    return this.white + string + this.reset;
   }
 }
