@@ -33,7 +33,7 @@ connection.on(WebcastEvent.LIKE, data => {
 
 connection.on(WebcastEvent.MEMBER, data => {
   const user = data.user.nickname;
-  const template = `${TEXT.grayStr(user)} joined the stream!`;
+  const template = `${TEXT.greenStr(user)} joined the stream!`;
   console.log(template)
 });
 
